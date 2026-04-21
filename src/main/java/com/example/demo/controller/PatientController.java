@@ -32,13 +32,13 @@ public class PatientController {
     @GetMapping("/h")
     public String getHello(){return "Lesgoooooo";}
 
-    @PostMapping(value = "/report/email", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public ResponseEntity<Map<String, String>> sendReportToPatientEmail(
-            @RequestParam String phoneNumber,
-            @RequestParam("file") MultipartFile file
-    ) {
-        patientService.sendReportPdfToPatient(phoneNumber, file);
-        return new ResponseEntity<>(Map.of("message", "Report sent to the patient's email on file."), HttpStatus.OK);
-    }
+        @PostMapping(value = "/report/email", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+        public ResponseEntity<Map<String, String>> sendReportToPatientEmail(
+                @RequestParam String phoneNumber,
+                @RequestParam("file") MultipartFile file
+        ) {
+            patientService.sendReportPdfToPatient(phoneNumber, file);
+            return new ResponseEntity<>(Map.of("message", "Report sent to the patient's email on file."), HttpStatus.OK);
+        }
 
 }

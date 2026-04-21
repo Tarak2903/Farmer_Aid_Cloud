@@ -77,7 +77,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:5173", "http://127.0.0.1:5173","https://d169kd6muzg2tm.cloudfront.net")); // Vite dev server ports
+        configuration.setAllowedOrigins(List.of("http://localhost:5173", "http://127.0.0.1:5173","https://dja01h9e4f049.cloudfront.net")); // Vite dev server ports
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
         configuration.setAllowedHeaders(Arrays.asList("Authorization", "Content-Type", "Accept"));
         configuration.setAllowCredentials(true);

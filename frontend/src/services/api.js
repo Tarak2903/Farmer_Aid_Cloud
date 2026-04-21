@@ -3,7 +3,7 @@ import toast from 'react-hot-toast';
 
 // Create an Axios instance
 const api = axios.create({
-  baseURL: 'https://dxjbi3p36ytti.cloudfront.net/', 
+  baseURL: 'https://d1d75cgm8yyhwz.cloudfront.net/', 
   headers: {
     'Content-Type': 'application/json',
   },
